@@ -48,7 +48,7 @@ $students = [
         <span> <?php echo $student['name']?></span>
         <span> <?php echo $student['lastname']?></span>
         <pre> <?php 
-                $average = (array_sum($student['votes'])/count($student));
+                $average = (array_sum($student['votes'])/count($student['votes']));
                 echo $average;?>
         </pre>
 
